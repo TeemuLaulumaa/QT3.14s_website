@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>LQTS Analysis and Statistic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/testi.css">
+
+<body>
+
+  <div class="container">
+    <h2>LQTS Profile-modal</h2>
+    <p>In this example we demonstrate how to close the modal by clicking outside of the modal box.</p>
+
+    <button onclick="document.getElementById('profile_modal').style.display='block'">Open Modal</button>
+
+    <div id="profile_modal" class="modal">
+      <div class="modal-content">
+        <header>
+          <span onclick="document.getElementById('profile_modal').style.display='none'">&times;</span>
+          <h2>Modal Header</h2>
+        </header>
+        <div class="container">
+          <p>You have two options to close this modal:</p>
+          <p>Click on the "x" or click anywhere outside of the modal!</p>
+        </div>
+        <footer>
+          <p>Modal Footer</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

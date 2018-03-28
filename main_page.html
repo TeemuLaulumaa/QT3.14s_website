@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/mainpage_css.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Slab">
+  <title> QTie - LQTS Monitoring Software</title>
+</head>
+
+<body>
+
+  <nav>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </nav>
+
+  <h1> QTie - LQTS Monitoring Statistic and Analysis </h1>
+
+  <div class="container">
+    <h2>Modaali</h2>
+    <button onclick="document.getElementById('edit_profile').style.display='block'" class="button_black button">Open Modal</button>
+
+    <div id="edit_profile" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('edit_profile').style.display='none'" class="button display-topright">&times;</span>
+
+        <div class="container">
+          <p>This is inside the modal.</p><br>
+          <form action="/action_page.php">
+            First name: <input type="text" name="firstname"><br>
+            <br> Last name: <input type="text" name="lastname"><br><br>
+            <input class="button_black button" type="submit" value="Submit"><br><br>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('edit_profile');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
