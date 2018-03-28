@@ -10,7 +10,8 @@
 <body>
 
 
-  <!-- FUNCTIONS -->
+  <!-- YLÄPALKKI -->
+
   <nav>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#news">News</a></li>
@@ -20,6 +21,9 @@
 
   <h1> QTie - LQTS Monitoring Statistic and Analysis </h1>
 
+
+
+  <!-- PROFIILI-MODAALIN RUNKO, TÄMÄ SIIRRETÄÄN MYÖHEMMIN YLÄPALKKIIN -->
   <div class="container">
     <h2>Modaali</h2>
     <button onclick="document.getElementById('edit_profile').style.display='block'" class="button_black button">Open Modal</button>
@@ -30,9 +34,11 @@
 
         <div class="container">
           <p>This is inside the modal.</p><br>
-          <form action="action_page.php">
-            First name: <input type="text" name="firstname"><br>
-            <br> Last name: <input type="text" name="lastname"><br><br>
+          <form action="action_page.php" method="post">
+            Full name: <input type="text" name="name"><br>
+            <br> E-mail: <input type="email" name="email"><br>
+            <br> Birthdate: <input type="date" name="name"><br>
+            <br> Gender: <input type="number" name="gender"><br><br>
             <input class="button_black button" type="submit" value="Submit"><br><br>
           </form>
         </div>
@@ -40,6 +46,12 @@
       </div>
     </div>
   </div>
+
+
+  <!-- SCRIPTIT -->
+
+
+  <!-- Java-script, joka sulkee modaalin jos käyttäjä klikkaa laatikon ulkopuolelta -->
   <script>
     // Get the modal
     var modal = document.getElementById('edit_profile');
@@ -51,6 +63,8 @@
       }
     }
   </script>
+
+
 
 
 </body>
