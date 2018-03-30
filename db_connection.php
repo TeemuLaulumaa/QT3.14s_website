@@ -16,7 +16,7 @@ function db_connect() {
         //  Handle error - notify administrator, log to a file, show an error screen, etc
         return mysqli_connect_error();
     }
-    mysqli_set_charset($connection, "utf8")
+    mysqli_set_charset($connection, "utf8");
     return $connection;
 }
 
@@ -33,5 +33,8 @@ function db_query($query) {
 // make a generic sql injection protection function
 // https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
 function db_escape_string($text) {
-  return mysqli_real_escape_string($connection, $text);
+    // Connect to the database
+    $connection = db_connect();
+
+    return mysqli_real_escape_string($connection, $text);
 }
