@@ -1,3 +1,5 @@
+/* COMMON STUFF */
+
 body {
   background: rgb(239, 239, 239);
   font-family: 'Josefin Slab', serif;
@@ -8,35 +10,95 @@ h1 {
   text-align: center;
 }
 
-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 0;
-}
+ul {}
 
-li {
-  float: left;
-}
+li {}
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+li a {}
 
 li a:hover {
   background-color: #111;
 }
 
+/* GRID LAYOUT STUFF */
 
+/* This makes sure that the padding and border are included in the total width and height of the elements. */
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+  background-color: #FF3B3F;
+  padding: 10px;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.headerlist {
+  text-align: center;
+  width: 100%;
+}
+
+.sessions {
+  width: 20%;
+}
+
+.graph {
+  width: 80%;
+}
+
+/* This here is based on "  grid-template-areas   "
+.headerlist { grid-area: header; }
+.sessions { grid-area: sessions; }
+.graph { grid-area: graph; }
+.statistics { grid-area: statistic; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'sessions graph graph graph graph graph'
+    'sessions statistic statistic statistic statistic statistic'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+  background-color: #FF3B3F;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+    */
+
+/* BREAKPOINTS FOR GRID */
+
+@media screen and (min-width: 500px) {}
+
+@media screen and (min-width: 650px) {}
+
+@media screen and (min-width: 900px) {}
+
+/* MODALS, BUTTONS, EXIT CROSS */
 
 .container:after, .container:before, .panel:after, .panel:before, .row:after, .row:before, .row-padding:after, .row-padding:before, .button_black {
   color: black;

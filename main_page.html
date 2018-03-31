@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/mainpage_css.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Slab">
   <title> QTie - LQTS Monitoring Software</title>
@@ -9,49 +12,27 @@
 
 <body>
 
-
-  <!-- YLÄPALKKI -->
-
-  <nav>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-  </nav>
-
   <h1> QTie - LQTS Monitoring Statistic and Analysis </h1>
 
-
-
-  <!-- PROFIILI-MODAALIN RUNKO, TÄMÄ SIIRRETÄÄN MYÖHEMMIN YLÄPALKKIIN -->
-  <div class="container">
-    <h2>Modaali</h2>
-    <button onclick="document.getElementById('edit_profile').style.display='block'" class="button_black button">Open Modal</button>
-
-    <div id="edit_profile" class="modal">
-      <div class="modal-content">
-        <span onclick="document.getElementById('edit_profile').style.display='none'" class="button display-topright">&times;</span>
-
-        <div class="container">
-          <p>This is inside the modal.</p><br>
-          <form action="action_page.php" method="post">
-            Full name: <input type="text" name="name"><br>
-            <br> E-mail: <input type="email" name="email"><br>
-            <br> Birthdate: <input type="date" name="birthdate"><br>
-            <br> Gender: <input type="number" name="gender"><br><br>
-            <input class="button_black button" type="submit" value="Submit"><br><br>
-          </form>
-        </div>
-
+  <div class="grid-container">
+    <div class="headerlist">Header
+      <div class="container">
+        <h2>Modaali</h2>
+        <button onclick="document.getElementById('edit_profile').style.display='block'" class="button_black button">Open Modal</button>
+        <pre><?php
+              include 'profile_modal.php';
+              ?>
+        </pre>
       </div>
     </div>
+    <div class="sessions">Sessions</div>
+    <div class="graph">Graph</div>
+    <div class="statistics">Statistics</div>
+    <div class="footer">Footer</div>
   </div>
 
 
   <!-- SCRIPTIT -->
-
-
-  <!-- Java-script, joka sulkee modaalin jos käyttäjä klikkaa laatikon ulkopuolelta -->
   <script>
     // Get the modal
     var modal = document.getElementById('edit_profile');
