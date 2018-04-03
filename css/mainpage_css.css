@@ -22,8 +22,10 @@ li a:hover {
 
 /* GRID LAYOUT STUFF */
 
-/* This makes sure that the padding and border are included in the total width and height of the elements. */
 
+
+/* This makes sure that the padding and border are included in the total width and height of the elements. */
+/* uhhhhhhhhh another way to make grids?
 * {
   box-sizing: border-box;
 }
@@ -61,8 +63,9 @@ li a:hover {
 .graph {
   width: 80%;
 }
+*/
 
-/* This here is based on "  grid-template-areas   "
+/* Using template syntax over here */
 .headerlist { grid-area: header; }
 .sessions { grid-area: sessions; }
 .graph { grid-area: graph; }
@@ -71,8 +74,10 @@ li a:hover {
 
 .grid-container {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:  1fr 2fr 2fr 1fr;
   grid-template-areas:
-    'header header header header header header'
+    'header header header header header header' 
     'sessions graph graph graph graph graph'
     'sessions statistic statistic statistic statistic statistic'
     'footer footer footer footer footer footer';
@@ -88,7 +93,6 @@ li a:hover {
   font-size: 30px;
 }
 
-    */
 
 /* BREAKPOINTS FOR GRID */
 
