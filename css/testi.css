@@ -1,4 +1,8 @@
 /* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+.chartdiv {
+	width	: 100%;
+	height	: 500px;
+}
 
 html {
   box-sizing: border-box
