@@ -33,6 +33,7 @@
     bottom: 0;
     height: inherit;
   }
+
 </style>
 
 <body>
@@ -66,25 +67,25 @@
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
   <div class="w3-main" style="margin-left:250px">
 
-    <!-- Chart code -->
+    <!-- Chart 1 code -->
     <script>
-      var chart = AmCharts.makeChart("chartdiv", {
+      var chart = AmCharts.makeChart("chartdiv1", {
         "type": "pie",
         "theme": "light",
         "dataProvider": [{
-          "country": "Medium Qtc",
-          "litres": 301.9
+          "qtc": "Medium Qtc",
+          "litres": 25
         },{
-          "country": "High Qtc",
-          "litres": 165.8
+          "qtc": "High Qtc",
+          "litres": 15
         },{
-          "country": "Low QTc",
-          "litres": 99
+          "qtc": "Low QTc",
+          "litres": 60
         },],
         "valueField": "litres",
-        "titleField": "country",
+        "titleField": "qtc",
         "balloon": {
-          "fixedPosition": true
+            "fixedPosition": true
         },
         "export": {
           "enabled": true
@@ -92,7 +93,34 @@
       });
     </script>
 
-    <div id="chartdiv"></div>
+    <!-- Chart 2 code -->
+    <script>
+      var chart = AmCharts.makeChart("chartdiv2", {
+        "type": "pie",
+        "theme": "light",
+        "dataProvider": [{
+          "qtc": "Medium Qtc",
+          "litres": 30
+        },{
+          "qtc": "High Qtc",
+          "litres": 120
+        },{
+          "qtc": "Low QTc",
+          "litres": 50
+        },],
+        "valueField": "litres",
+        "titleField": "qtc",
+        "balloon": {
+            "fixedPosition": true
+        },
+        "export": {
+          "enabled": true
+        }
+      });
+    </script>
+
+    <div id="chartdiv1"></div>
+    <div id="chartdiv2"></div>
 
     <footer id="myFooter">
       <div class="w3-container w3-theme-l2 w3-padding-32">
