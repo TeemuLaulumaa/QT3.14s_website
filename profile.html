@@ -24,7 +24,7 @@
   .w3-sidebar {
     z-index: 3;
     width: 250px;
-    top: 43px;
+    top: 3px;
     bottom: 0;
     height: inherit;
   }
@@ -48,13 +48,14 @@
   }
 
   footer {
-    padding-bottom: 50px;
+    position: absolute;
+    
   }
 
   body {
     background-color:rgb(239, 239, 239);
   }
-
+  
 </style>
 
 <body>
@@ -93,9 +94,9 @@
           <input class="button_black button" type="submit" value="Save edits"><br><br>
         </form>
         <button id="pwdbutton"> Change password </button>
-        <button onclick="<?php include_once transfer_script.php ?>"> Generate Test Data</button>
       </div>
     </div>
+      
     <footer id="myFooter">
       <div class="w3-container w3-theme-l2 w3-padding-32">
         <h4>Footer</h4>
