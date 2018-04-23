@@ -7,7 +7,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<!-- AMCharts Pie Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 
 <style>
   html,
@@ -28,14 +33,6 @@
     bottom: 0;
     height: inherit;
   }
-
-  body {
-    background-color:rgb(239, 239, 239);
-  }
-
-  footer {
-    padding-bottom: 50px;
-  }
 </style>
 
 <body>
@@ -48,22 +45,56 @@
       <a href="graph.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Graph</a>
       <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
       <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+      <a href="help.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
+      <a href="logout.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Log out</a>
     </div>
   </div>
 
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+    <h4 class="w3-bar-item"><b>Recorded sessions</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">11.04.2018 - 09:12</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">10.04.2018 - 22:37</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">10.04.2018 - 14:03</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">09.04.2018 - 22:43</a>
+  </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:0px">
-    <h1 style="padding-left: 15px"><br> About LQTS <br> </h1>
-    <p style="padding-left: 15px">Pitkä QT-aika on aikaväli, joka kuvaa sydämen kammioiden sähköisen toiminnan kestoa kunkin sähköpurkauksen alusta siihen asti, kunnes sähköinen toiminta päättyy.<br> Pitkän QT- ajan syndroomassa (LQTS) kammioiden palautuminen lepotilaan eli sähköisen
-      toiminnan päättyminen kestää sydämen sisäisten kanavien geenivirheestä johtuen normaalia pidempään ja aiheuttaa näin riskin kammiovärinän syntymiselle.</p>
-    <h1 style="padding-left: 15px"><br> About this website </h1>
-    <p style="padding-left: 15px"> Projektin tarkoituksena on luoda kannettavalla tai pöytäkoneella toimiva EKG käyrän QT- intervallin analysointiin kotioloissa soveltuva ohjelma hyödyntäen PHP:tä sekä MySQL tie- tokantoja. Ohjelma rakentuu pääsivun monipuoliseen informaatioon sekä
-      ympärille avautu- vista modaalisivuista tukiominaisuuksineen. Sisäänkäynti ohjelmaan tulee avaussivulta kir- jautumispalvelun kautta ja näistä luodaan kokeiluversio kotioloissa analysoitavan tiedon saattamiseksi käyttäjälle havainnollistavaan muotoon
-      sairauden riskihetkien muodostumi- sesta eri toimintojen ja aktiviteettien yhteydessä. Tietoa voitaisiin hyödyntää pienentämään rytmihäiriöiden riskiä. </p>
+  <div class="w3-main" style="margin-left:250px">
+
+    <!-- Chart code -->
+    <script>
+      var chart = AmCharts.makeChart("chartdiv", {
+        "type": "pie",
+        "theme": "light",
+        "dataProvider": [{
+          "country": "Medium Qtc",
+          "litres": 301.9
+        },{
+          "country": "High Qtc",
+          "litres": 165.8
+        },{
+          "country": "Low QTc",
+          "litres": 99
+        },],
+        "valueField": "litres",
+        "titleField": "country",
+        "balloon": {
+          "fixedPosition": true
+        },
+        "export": {
+          "enabled": true
+        }
+      });
+    </script>
+
+    <div id="chartdiv"></div>
 
     <footer id="myFooter">
       <div class="w3-container w3-theme-l2 w3-padding-32">
