@@ -1,4 +1,4 @@
-<?
+<?php
     require_once "https.php"
 ?>
 <!DOCTYPE html>
@@ -6,7 +6,7 @@
 <title>QTie</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/startpage.css">
+<link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -97,7 +97,7 @@ header {background-color: darkorange}
             var btn = document.getElementById(b_id);
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[close];
-            // When the user clicks the button, open the modal 
+            // When the user clicks the button, open the modal
             btn.onclick = function() {
                 console.log(b_id + ' button works :)');
                 modal.style.display = "block";
@@ -136,9 +136,9 @@ header {background-color: darkorange}
   <div class="w3-content">
     <div class="w3-twothird">
         <h1>Advantages in handling LQTS-Long QT Syndrom with QTie</h1>
-      <h5 class="w3-padding-32">What is it anyway - never heard about it...well it's hereditary disease which exposes you to arrhythmia and in worse case scenario...to ventricullar fibrillation...register and learn more &#128077<br>
+      <h5 class="w3-padding-32">What is it anyway - never heard about it...well it's hereditary disease which exposes you to arrhythmia and in worse case scenario...to ventricullar fibrillation...register and learn more 128077<br>
         </h5>
-        
+
 
       <p>How can I gain something via QTie - well, You are able to monitor your personal activities during days, weeks and months and          create analyzes out of those measurements. Analyzing will inform you where are the risky points in your own life. Basicly we'll give you knowledge of your syndrom to dicrease fear and increase life quality...join us and click yourself in</p>
     </div>
@@ -181,7 +181,7 @@ function myFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else { 
+    } else {
         x.className = x.className.replace(" w3-show", "");
     }
 }
