@@ -27,8 +27,8 @@ else {
 /********************************************************************************/
 // Get the first row to create the column headings
 
-$fp = fopen('../head.openofood.csv', 'r');
-$frow = fgetcsv($fp, 10000, "\t");
+$fp = fopen('Testidata_testi.csv', 'r');
+$frow = fgetcsv($fp, 10000, ";");
 $row = 0;
 echo "<pre>";
 $col_header = array();
@@ -37,56 +37,22 @@ foreach($frow as $column) {
 }
 var_dump($col_header);
 
+// 1. insert into Session
+// INSERT INTO `Session` (date) VALUES (CURRENT_TIMESTAMP);
+// 2. get the newly created id
+// $seesion_id = mysqli_insert_id($connection)
+// 3. insert into Records profile_id from $_SESSION session_id from step 2
 
-while (($rows = fgetcsv($fp, 10000, "\t")) !== false) {
+while (($rows = fgetcsv($fp, 10000, ";")) !== false) {
 	//var_dump($rows);
 	// the ingredients
-	echo "\ningredients: " . $rows[34] . "\n";
-	$test = preg_split('/[,\(\[\]\)]/i', $rows[34]);
-	var_dump($test);
-	//loop
-
-		//trim() to remove whitespace at beginning and end
-		//strtr($str,[' '=>'']);
-
-		// convert lowercase strtolower($str)
-		//$str = strtolower($str);
-
-		// explode number %
-		print_r(preg_split('#(?<=\%)(?=[a-z])#i'));
-		// insert in ingredient table
-
-		// search if : then
-
-			// explode for space-dash but not letter-dash (insert into category and ingredient tables)
-
-	// insert food
-	/*echo "code: " . $rows[0];
-	echo "\nname: " . $rows[7];
-	echo "\ningedients: " . $rows[34];
-	echo "\nglucemic index: " . $rows[161];
-	echo "\nsugar per 100g: " . $rows[102];
-	*/
-	//get the newly created id
-	//loop ingredients again
-		// insert into contains food_id and ingredient
-	// check food category [14] and/or [15] and/or [16]
-	//loop
-		//insert into category table and isOfGeneric
-	echo "\nfood category: " . $rows[14] . " ::: " . $rows[15] . " ::: "  . $rows[16];
-
+	echo "\n" . $col_header[0] . ": " . $rows[0] . "\n";
+	echo "\n" . $col_header[1] . ": " . $rows[1] . "\n";
+	// 4. insert into RtoR qtc $row[1] session_id $session_id
+	// INSERT INTO `RtoR` (qtc, session_id) VALUES ($rows[1], $session_id);
 	echo "\n";
 }
 
 fclose($fp);
-$create = "create table if not exists $table ($columns);";
-//mysql_query($create, $db);
 
-/********************************************************************************/
-// Import the data into the newly created table.
-/*
-$file = $_SERVER['PWD'].'/'.$file;
-$q = "load data infile '$file' into table $table fields terminated by ',' ignore 1 lines";
-mysql_query($q, $db);
-*/
 ?>
