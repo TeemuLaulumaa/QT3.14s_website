@@ -1742,11 +1742,11 @@ a {
 
   #form_edit_profile {
     display: table-cell;
-    /*vertical-align: middle; */
+    vertical-align: middle; */
     text-align: center;
     border-radius: 0;
   }
 
   #pwdbutton {
-    margin-left: 55px;
+    /* margin-left: 55px; */
   }
