@@ -15,19 +15,37 @@ function db_connect() {
     if($connection === false) {
         //  Handle error - notify administrator, log to a file, show an error screen, etc
         return mysqli_connect_error();
+        exit();
     }
     mysqli_set_charset($connection, "utf8");
     return $connection;
 }
 
+function internal_query($query){
+  // Connect to the database
+  $connection = db_connect();
+  echo "query: $query\n";
+  // Query the database
+  $result = mysqli_query($connection,$query);
+  if($result){
+    echo "query OK\n";
+  }else{
+    echo "query failed: " . mysqli_error($connection);
+  }
+  return $result;
+}
+
 function db_query($query) {
-    // Connect to the database
-    $connection = db_connect();
+  return internal_query($query);
+}
 
-    // Query the database
-    $result = mysqli_query($connection,$query);
-
-    return $result;
+function db_insert_query($query) {
+  $connection = db_connect();
+  $res = internal_query($query);
+  if(!$res){
+    return -1;
+  }
+  return  mysqli_insert_id($connection);
 }
 
 // make a generic sql injection protection function
