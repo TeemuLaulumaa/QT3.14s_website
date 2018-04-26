@@ -56,12 +56,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
 <header class="w3-container taustakuva w3-center" style="padding:128px 16px ">
     <h1 class="w3-margin w3-jumbo">QTie</h1>
     <p class="w3-xlarge">independent LQTS monitoring system</p>
-    <button id="regbutton" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Register - when you arive here at the first time</button>
+    <button id="regbutton" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Register - when you arrive here at the first time</button>
     <button id="loginbutton" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Login - when we are already familiar, hello again</button>
     <!-- The Modal -->
     <div id="loginModal" class="modal">
 
-    <!-- Modal content -->
+    <!-- Login Modal content -->
         <div class="modal-content">
         <span class="close">&times;</span>
             <?
@@ -100,10 +100,23 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
     <!-- The Modal -->
     <div id="regModal" class="modal">
 
-    <!-- Modal content -->
+    <!-- Registration Modal content -->
         <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Trying to get the f...ing forms here</p>
+        <form method="post" action="registering.php">
+            <p>Please enter required information for registration, thanks !</p>
+            Name: <input type="text" name="name">
+            E-mail: <input type="email" name="email">
+            Birthdate: <input type="date" name="birthdate" value="yyyy-mm-dd">
+            Male: <input type="radio" name="gender" value="male">
+            Female: <input type="radio" name="gender" value="female">
+            <input type="submit" name="clicked" value="Register">
+            <input type="reset" value="Clear all">
+            <?
+                include_once "registering.php"
+            ?>
+        </form>           
+            
         </div>
     </div>
     <script>
