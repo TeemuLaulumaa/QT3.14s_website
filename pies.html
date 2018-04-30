@@ -102,60 +102,22 @@
       });
     </script>
 
-    <script>
-      var chart = AmCharts.makeChart("chartdiv3", {
-        "type": "pie",
-        "theme": "light",
-        "dataProvider": [{
-          "qtc": "Medium Qtc",
-          "litres": 30
-        },{
-          "qtc": "High Qtc",
-          "litres": 120
-        },{
-          "qtc": "Low QTc",
-          "litres": 50
-        },],
-        "valueField": "litres",
-        "titleField": "qtc",
-        "balloon": {
-            "fixedPosition": true
-        },
-        "export": {
-          "enabled": true
-        }
-      });
-    </script>
-
-    <script>
-      var chart = AmCharts.makeChart("chartdiv4", {
-        "type": "pie",
-        "theme": "light",
-        "dataProvider": [{
-          "qtc": "Medium Qtc",
-          "litres": 30
-        },{
-          "qtc": "High Qtc",
-          "litres": 120
-        },{
-          "qtc": "Low QTc",
-          "litres": 50
-        },],
-        "valueField": "litres",
-        "titleField": "qtc",
-        "balloon": {
-            "fixedPosition": true
-        },
-        "export": {
-          "enabled": true
-        }
-      });
-    </script>
-
     <div id="chartdiv1"></div>
     <div id="chartdiv2"></div>
-    <div id="chartdiv3"></div>
-    <div id="chartdiv4"></div>
+
+    <form method="post">
+    Start date: <br> <input type="date" name="stardate">
+        <br><br>
+    End date: <br> <input type="date" name="enddate">
+        <br><br>
+    Activity: <br> <select name="activity">
+        <option value="other">Work</option>
+        <option value="male">Exercise</option>
+        <option value="female">Rest</option> </select>
+        <br><br>
+      <input class="button_black button" type="submit" value="Search">
+        <br><br>
+    </form>
 
     <!-- PIIRAKOIDNE JÄLKEEN FLOAT LOPETETAAN TÄLLÄ https://www.w3schools.com/howto/howto_css_clearfix.asp -->
 
