@@ -1,4 +1,4 @@
-<?php
+<?
     require_once "https.php"
 ?>
 <!DOCTYPE html>
@@ -9,10 +9,7 @@
 <link rel="stylesheet" href="css/startpage.css">
 <style>
 body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
-    header {background-image: url(img/NooajaPeetu.JPG);
-            background-repeat: no-repeat;
-            background-size: cover;
-            }
+    header {background-color: #8e8e8e}
     footer {background-color: #8e8e8e}
 /* The Modal (background) */
 .modal {
@@ -107,16 +104,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
         <div class="modal-content">
         <span class="close">&times;</span>
         <form method="post" action="registering.php">
-            <fieldset>
-                <legend>Please enter required information for registration, thanks !</legend>
-                <label>Name: <input type="text" name="name" placeholder="Mary Doe"></label>
-                <label>E-mail: <input type="email" name="email" placeholder="Mary@test.org"></label>
-                <label>Birthdate: <input type="date" name="birthdate" placeholder="yyyy-mm-dd"></label>
-                <label>Male: <input type="radio" name="gender" value="male"></label>
-                <label>Female: <input type="radio" name="gender" value="female"></label>
-                <input type="submit" name="clicked" value="Register">
-                <input type="reset" value="Clear all">
-            </fieldset>
+            <p>Please enter required information for registration, thanks !</p>
+            Name: <input type="text" name="name">
+            E-mail: <input type="email" name="email">
+            Birthdate: <input type="date" name="birthdate" value="yyyy-mm-dd">
+            Male: <input type="radio" name="gender" value="male">
+            Female: <input type="radio" name="gender" value="female">
+            <input type="submit" name="clicked" value="Register">
+            <input type="reset" value="Clear all">
+            <?
+                include_once "registering.php"
+            ?>
         </form>           
             
         </div>
