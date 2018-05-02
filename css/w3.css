@@ -240,7 +240,7 @@ textarea {
 
 html, body {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 1em; /* 16px 100% 1em*/ 
   line-height: 1.5;
   background-color: rgb(239, 239, 239);
       
@@ -251,28 +251,20 @@ html {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.25em;
     padding-bottom:15px;
 }
 
 h2 {
-  font-size: 30px
+  font-size: 1.9em;
 }
 
 h3 {
-  font-size: 24px
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: 20px
-}
-
-h5 {
-  font-size: 18px
-}
-
-h6 {
-  font-size: 16px
+  font-size: 1.25em;
 }
 
 .w3-serif {
@@ -473,7 +465,7 @@ a {
 }
 
 .w3-dropdown-hover:hover>.w3-button:first-child, .w3-dropdown-click:hover>.w3-button:first-child {
-  background-color: #ccc;
+  background-color: #FF3B38;
   color: #000
 }
 
@@ -982,7 +974,7 @@ a {
 
 .w3-code, .w3-codespan {
   font-family: Consolas, "courier new";
-  font-size: 16px
+  font-size: 1em;
 }
 
 .w3-code {
@@ -1185,7 +1177,7 @@ a {
 }
 
 .w3-medium {
-  font-size: 15px !important
+  font-size: 16px !important
 }
 
 .w3-large {
@@ -1767,8 +1759,8 @@ a {
 
 .container {
    /* clear: both; */
-    width: 100%;
-   
+    
+   margin-right: 20%;
     text-align: center;
 }
 
