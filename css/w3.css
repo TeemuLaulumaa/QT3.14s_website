@@ -64,9 +64,11 @@ body {
 }
 
 main {
-  margin: 0 10%;
-  height: 100%;
-  min-height: 100%;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    min-height: 100%;
+    padding: 10px;
 
 }
 
@@ -178,7 +180,7 @@ optgroup {
 }
 
 button, input {
-  overflow: visible
+  overflow: visible 
 }
 
 button, select {
@@ -259,7 +261,6 @@ html {
 
 h1 {
     font-size: 36px;
-    padding-left:15px;
     padding-bottom:15px;
 }
 
@@ -290,7 +291,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin: 10px 0
+  margin: 10px 12%;
 }
 
 .w3-wide {
@@ -528,10 +529,6 @@ a {
   width: 100%;
   text-align: left;
   padding: 8px 16px
-}
-
-.w3-main, #main {
-  transition: margin-left .4s
 }
 
 .w3-modal {
@@ -845,10 +842,6 @@ a {
 @media (max-width:992px) {
   .w3-sidebar.w3-collapse {
     display: none
-  }
-  .w3-main {
-    margin-left: 0 !important;
-    margin-right: 0 !important
   }
 }
 
@@ -1781,3 +1774,38 @@ a {
 .w3-hover-theme:hover {color:#fff !important; background-color:#000000 !important}
 .w3-hover-text-theme:hover {color:#000000 !important}
 .w3-hover-border-theme:hover {border-color:#000000 !important}
+
+
+
+.container {
+    clear: both;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.container label {
+    clear: both;
+    width: auto;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 15px;
+    float:left;
+    
+}
+
+.container input {
+    width: 100%;
+    clear: both;
+    float: left;
+  
+}
+
+.container select {
+    width: auto;
+    clear: both;
+    float: left;    
+
+}
+    

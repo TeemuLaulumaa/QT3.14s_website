@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -44,30 +44,30 @@
 
 <main>
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-  <div class="w3-main">
-    <h1> Here you can edit your profile </h1>
-    <div class="w3-row">
-      <div id="formin_divi" class="w3-twothird w3-container">
-        <form id="form_edit_profile" action="edit_profile.php" method="post">
 
-        Full name: <br>
+    <h1> Here you can edit your profile </h1>
+    <div class="container">
+    <form>
+        <label> Full name: </label><br>
         <input type="text" name="name">
             <br><br>
-        E-mail: <br> <input type="email" name="email">       <br><br>
-        Birthdate: <br> <input type="date" name="birthdate">
+        <label>E-mail: </label><br> 
+        <input type="email" name="email">       <br><br>
+        <label>Birthdate: </label><br> 
+        <input type="date" name="birthdate">
             <br><br>
-        Gender: <br> <select name="gender">
+        <label>Gender: </label>
+        <select name="gender">
             <option value="other">Other/Rather not say</option>
             <option value="male">Male</option>
-            <option value="female">Female</option> </select>
-            <br><br>
-          <input class="button_black button" type="submit" value="Save edits">
-            <br><br>
-        </form>
+            <option value="female">Female</option></select>
+            <br><br><br>
+        <input class="button_black button" type="submit" value="Save edits" style="width: auto">
         <button id="pwdbutton"> Change password </button>
-      </div>
+    </form>
     </div>
 
+      
     <!-- <footer id="myFooter">
       <div class="w3-container w3-theme-l2 w3-padding-32">
         <h4>Footer</h4>
@@ -75,7 +75,7 @@
     </footer> -->
 
     <!-- END MAIN -->
-  </div>
+    </main>
 
   <script>
     // Get the Sidebar
