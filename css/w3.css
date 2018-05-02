@@ -172,19 +172,10 @@ hr {
 
 button, input, select, textarea {
   font: inherit;
-  margin: 0
 }
 
 optgroup {
   font-weight: bold
-}
-
-button, input {
-  overflow: visible 
-}
-
-button, select {
-  text-transform: none
 }
 
 button, html [type=button], [type=reset], [type=submit] {
@@ -193,7 +184,7 @@ button, html [type=button], [type=reset], [type=submit] {
 
 button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
   border-style: none;
-  padding: 0
+  padding: 0 
 }
 
 button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
@@ -291,7 +282,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  margin: 10px 12%;
+ 
 }
 
 .w3-wide {
@@ -1747,9 +1738,6 @@ a {
     border-radius: 0;
   }
 
-  #pwdbutton {
-    /* margin-left: 55px; */
-  }
 /* NAV BAR from https://www.w3schools.com/lib/w3-theme-black.css */
 
 .w3-theme-l5 {color:#000 !important; background-color:#f0f0f0 !important}
@@ -1778,34 +1766,24 @@ a {
 
 
 .container {
-    clear: both;
-    width: 80%;
-    margin: auto;
+   /* clear: both; */
+    width: 100%;
+   
     text-align: center;
-    
 }
 
 .container label {
     clear: both;
-    width: auto;
-    margin-top: 10px;
+    width: 33%;
+    margin-top: 1.5%;
     text-align: right;
-    margin-right: 15px;
-    float:left;
-    
+    margin-right: 1%;
+    float: left; 
 }
 
-.container input {
-    width: 100%;
-    clear: both;
-    float: left;
-  
+.container input, select, button {
+    width: 60%;
+    margin-top: 1.5%;
+    /*clear: both; */
+    float: left; 
 }
-
-.container select {
-    width: auto;
-    clear: both;
-    float: left;    
-
-}
-    
