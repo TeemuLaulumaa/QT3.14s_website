@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 
-
+<?php include fetch_sessions.php ?>
 <!-- COMMENTING TO CHECK HOW MY COULD SYNCS -->
 
 <body>
@@ -57,13 +57,13 @@
         "theme": "light",
         "dataProvider": [{
           "qtc": "Medium Qtc",
-          "litres": 25
+          "litres": $length_medium
         },{
           "qtc": "High Qtc",
-          "litres": 15
+          "litres": $length_high
         },{
           "qtc": "Low QTc",
-          "litres": 60
+          "litres": lenght_low
         },],
         "valueField": "litres",
         "titleField": "qtc",
