@@ -1,9 +1,10 @@
 <?php
 include_once('db_connection.php');
 
-
 // check which profile the session is on and use data associated with it
 //$curr_session = aasdfasdfasdf
+session_start();
+$_SESSION["username"]
 
 
 $query = "SELECT 'qtc' FROM ((((('RtoR' INNER JOIN 'Session' ON 'RtoR.session_id' = 'Session.session_id') INNER JOIN 'Records' ON 'Session.session_id' = 'Records.session_id') INNER JOIN 'Profile' ON 'Records.profile_id' = 'Profile.profile_id') INNER JOIN 'DiaryDoesSession' ON 'Session.session_id' = 'DiaryDoesSession.session_id') INNER JOIN 'Diary' ON 'DiaryDoesSession.diary_id' = 'Diary.diary_id')";
@@ -51,5 +52,6 @@ if (empty($_POST['startdate']) && !empty($_POST['enddate']) && empty($_POST['act
     $query += " WHERE 'Profile.profile_id' = '$curr_session' AND 'Session.date' <= ' . db_escape_string($_POST['enddate']) . '";
 }
 
+echo "$query";
 
 $result = db_query($query);
