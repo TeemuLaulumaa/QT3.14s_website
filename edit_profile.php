@@ -8,5 +8,5 @@ if ($_SESSION['username']) {
   //user logged in
 
 
-$result = db_query("INSERT INTO Profile (name, email, birthdate, gender)
+$result = db_query("INSERT INTO profile (name, email, birthdate, gender)
 VALUES ('" . db_escape_string($_POST['name']) . "', '" . db_escape_string($_POST['email']) . "', '" . db_escape_string($_POST['birthdate']) . "', '" . db_escape_string($_POST['gender']) . "')");
