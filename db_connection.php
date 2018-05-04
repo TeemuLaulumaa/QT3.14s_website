@@ -25,11 +25,12 @@ function db_connect() {
 function internal_query($query){
   // Connect to the database
   $connection = db_connect();
-  echo "query: $query\n";
+  echo "db_connection echoing query here: $query\n";
   // Query the database
   $result = mysqli_query($connection,$query);
   if($result){
     echo "query OK\n";
+    //var_dump($result);
   }else{
     echo "query failed: " . mysqli_error($connection);
   }

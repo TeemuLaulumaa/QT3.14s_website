@@ -105,7 +105,7 @@
     <div id="chartdiv1"></div>
     <div id="chartdiv2"></div>
 
-<?php include_once db_connection.php ?>
+<?php include_once "db_connection.php" ?>
 
     <form action="fetch_sessions.php" method="post">
     Start date: <br> <input type="date" name="startdate">
@@ -113,9 +113,9 @@
     End date: <br> <input type="date" name="enddate">
         <br><br>
     Activity: <br> <select name="activity">
-        <option value="work">Work</option>
-        <option value="exercise">Exercise</option>
-        <option value="rest">Rest</option> </select>
+        <option value="WORK">Work</option>
+        <option value="EXERCISE">Exercise</option>
+        <option value="REST">Rest</option> </select>
         <br><br>
       <input class="button_black button" type="submit" value="Search">
         <br><br>
