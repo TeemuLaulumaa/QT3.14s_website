@@ -1,8 +1,7 @@
 <?
     require_once "https.php";
-
-if (session_status() == PHP_SESSION_NONE) {
-    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php");
+    //if (session_status() == PHP_SESSION_NONE) {
+    //    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php");
 }
 
 ?>
@@ -30,7 +29,7 @@ if (session_status() == PHP_SESSION_NONE) {
       <a href="profile.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
       <a href="about.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
       <a href="help.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
-      <a href="start.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
+      <a href="logout.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
     </div>
   </div>
 </nav>

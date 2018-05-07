@@ -11,11 +11,12 @@
    $dbpwd = $row['hash'];
 
    if(password_verify($_POST['pwd'], $dbpwd) && !is_null($row)){
+     session_start(['cookie_lifetime' => 3600]);
      echo"Hello, " . $row['name'];
      $_SESSION['name'] = $row['name'];
      $_SESSION['email'] = $dbemail;
      $_SESSION['profile_id'] = $row['profile_id'];
-     header("Location: https://users.metropolia.fi/~teemulau/QTie/start.php");
+     header("Location: https://users.metropolia.fi/~teemulau/QTie/pies.php");
 
    } else {
        echo "Login failed.";

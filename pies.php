@@ -1,10 +1,8 @@
 <?
     require_once "https.php";
 
-if (session_status() == PHP_SESSION_NONE) {
-    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php");
-}
-
+    //if (session_status() == PHP_SESSION_NONE) {
+    //    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php");
 ?>
 
 <!DOCTYPE html>
@@ -32,12 +30,12 @@ if (session_status() == PHP_SESSION_NONE) {
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-      <a href="pies.html" class="w3-bar-item w3-button w3-theme-l1">QTie - Frontpage</a>
-      <a href="graph.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Graph</a>
-      <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
-      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-        <a href="xx.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
-        <a href="xx.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
+      <a href="pies.php" class="w3-bar-item w3-button w3-theme-l1">QTie - Frontpage</a>
+      <a href="graph.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Graph</a>
+      <a href="profile.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
+      <a href="about.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+        <a href="help.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
+        <a href="logout.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
     </div>
   </div>
 
