@@ -19,9 +19,9 @@
 
     main {
         width: 100%;
-        
+
     }
-    
+
     .w3-sidebar {
     top: 3px;
 /* eri kun w3.css */
@@ -35,12 +35,12 @@
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-      <a href="pies.html" class="w3-bar-item w3-button w3-theme-l1">QTie - Frontpage</a>
-      <a href="graph.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Graph</a>
-      <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
-      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-        <a href="xx.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
-        <a href="xx.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
+      <a href="pies.php" class="w3-bar-item w3-button w3-theme-l1">QTie - Frontpage</a>
+      <a href="graph.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Graph</a>
+      <a href="profile.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
+      <a href="about.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+        <a href="help.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
+        <a href="start.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
     </div>
   </div>
 </nav>
@@ -57,9 +57,9 @@
     <form>
         <label>Full name: </label>
         <input type="text" name="name">
-        <label>E-mail: </label> 
+        <label>E-mail: </label>
         <input type="email" name="email">
-        <label>Birthdate: </label> 
+        <label>Birthdate: </label>
         <input type="date" name="birthdate">
         <label>Gender: </label>
         <select name="gender">
@@ -71,7 +71,7 @@
         <button style="width: auto"> Change password </button>
     </form>
     </div>
-    
+
     <!-- <footer id="myFooter">
       <div class="w3-container w3-theme-l2 w3-padding-32">
         <h4>Footer</h4>

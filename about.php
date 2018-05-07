@@ -15,12 +15,12 @@
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-      <a href="pies.html" class="w3-bar-item w3-button w3-theme-l1">QTie - Frontpage</a>
-      <a href="graph.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Graph</a>
-      <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
-      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-      <a href="xx.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
-      <a href="xx.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
+      <a href="pies.php" class="w3-bar-item w3-button w3-theme-l1">QTie - Frontpage</a>
+      <a href="graph.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Graph</a>
+      <a href="profile.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Profile</a>
+      <a href="about.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+      <a href="help.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Help</a>
+      <a href="start.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="color: #FF3B38; float:right;">Log Out</a>
     </div>
   </div>
 </nav>
@@ -29,7 +29,7 @@
 <nav role="navigation">
     <div id="menuToggle">
     <input type="checkbox" />
-    
+
     <span></span>
     <span></span>
     <span></span>
@@ -42,22 +42,22 @@
       <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
     </ul>
   </div>
-</nav>    
-    
-    
+</nav>
+
+
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<main>      
-  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->  
+<main>
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div>
     <h1><br> About LQTS <br> </h1>
-    <p>Pitkä QT-aika on aikaväli, joka kuvaa sydämen kammioiden sähköisen toiminnan kestoa kunkin sähköpurkauksen alusta siihen asti, kunnes sähköinen toiminta päättyy. 
+    <p>Pitkä QT-aika on aikaväli, joka kuvaa sydämen kammioiden sähköisen toiminnan kestoa kunkin sähköpurkauksen alusta siihen asti, kunnes sähköinen toiminta päättyy.
     <br>
     Pitkän QT-ajan syndroomassa (LQTS) kammioiden palautuminen lepotilaan eli sähköisen toiminnan päättyminen kestää sydämen sisäisten kanavien geenivirheestä johtuen normaalia pidempään ja aiheuttaa näin riskin kammiovärinän syntymiselle. </p>
     <br>
 
-  
+
     <br>
     <h1> About this website </h1>
     <p> Projektin tarkoituksena on luoda kannettavalla tai pöytäkoneella toimiva EKG käyrän QT-intervallin analysointiin kotioloissa soveltuva ohjelma hyödyntäen PHP:tä sekä MySQL tietokantoja. Ohjelma rakentuu pääsivun monipuoliseen informaatioon sekä ympärille avautuvista modaalisivuista tukiominaisuuksineen. Sisäänkäynti ohjelmaan tulee avaussivulta kirjautumispalvelun kautta ja näistä luodaan kokeiluversio kotioloissa analysoitavan tiedon saattamiseksi käyttäjälle havainnollistavaan muotoon sairauden riskihetkien muodostumisesta eri toimintojen ja aktiviteettien yhteydessä. Tietoa voitaisiin hyödyntää pienentämään rytmihäiriöiden riskiä.</p>
@@ -81,7 +81,7 @@
 <footer>
 
     <p> &copy; 2018 QTie Pies</p>
-    
+
 </footer>
   <script>
     // Get the Sidebar
