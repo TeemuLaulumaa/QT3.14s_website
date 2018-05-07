@@ -2,7 +2,7 @@
     require_once "https.php";
 
 if (session_status() == PHP_SESSION_NONE) {
-    header("Location: http://www.yourwebsite.com/user.php");
+    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php");
 }
 
 ?>

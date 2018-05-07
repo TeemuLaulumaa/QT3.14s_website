@@ -15,6 +15,8 @@
      $_SESSION['name'] = $row['name'];
      $_SESSION['email'] = $dbemail;
      $_SESSION['profile_id'] = $row['profile_id'];
+     header("Location: https://users.metropolia.fi/~teemulau/QTie/start.php");
+
    } else {
        echo "Login failed.";
    }
