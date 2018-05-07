@@ -107,19 +107,24 @@
 
 <?php include_once db_connection.php ?>
 
-    <form action="fetch_sessions.php" method="post">
-    Start date: <br> <input type="date" name="stardate">
+<div class="container">
+<form action="fetch_sessions.php" method="post">
+    <label>Start date: </label> <br> 
+    <input type="date" name="stardate">
         <br><br>
-    End date: <br> <input type="date" name="enddate">
+    <label>End date: </label> <br> 
+    <input type="date" name="enddate">
         <br><br>
-    Activity: <br> <select name="activity">
+    <label>Activity: </label> <br> 
+    <select name="activity">
         <option value="work">Work</option>
         <option value="exercise">Exercise</option>
         <option value="rest">Rest</option> </select>
         <br><br>
-      <input class="button_black button" type="submit" value="Search">
+      <input class="button_black button" type="submit" value="Search" style="width: auto">
         <br><br>
     </form>
+    </div>
 
     <!-- PIIRAKOIDNE JÄLKEEN FLOAT LOPETETAAN TÄLLÄ https://www.w3schools.com/howto/howto_css_clearfix.asp -->
 
