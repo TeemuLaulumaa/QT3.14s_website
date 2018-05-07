@@ -13,4 +13,6 @@ if (ini_get("session.use_cookies")) {
 }
 session_unset();
 session_destroy();
-echo "You're now logged out.";
+echo "You're now logged out. Your browser will return to frontpage automatically.";
+//sleep (3);
+header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php");

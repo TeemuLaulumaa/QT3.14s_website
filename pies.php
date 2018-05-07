@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 
-<?php include fetch_sessions.php ?>
+<?php include "fetch_sessions.php" ?>
 <!-- COMMENTING TO CHECK HOW MY COULD SYNCS -->
 
 <body>
@@ -57,20 +57,20 @@
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
   <div class="w3-main" style="margin-left:250px">
 
-    <!-- Chart 1 code -->
+    <!-- Chart 1 code. In "litres" there should be variables $length_medium, $length_high and $lenght_low. For now there is static shit.  -->
     <script>
       var chart = AmCharts.makeChart("chartdiv1", {
         "type": "pie",
         "theme": "light",
         "dataProvider": [{
           "qtc": "Medium Qtc",
-          "litres": $length_medium
+          "litres":3
         },{
           "qtc": "High Qtc",
-          "litres": $length_high
+          "litres":1
         },{
           "qtc": "Low QTc",
-          "litres": $lenght_low
+          "litres":6
         },],
         "valueField": "litres",
         "titleField": "qtc",

@@ -1,7 +1,7 @@
 <?
     require_once "https.php";
-    //if (session_status() == PHP_SESSION_NONE) {
-    //    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php"); }
+    //if (!empty($_SESSION['profile_id'])) {
+    //header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php"); }
 
 ?>
 
