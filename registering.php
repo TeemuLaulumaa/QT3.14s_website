@@ -5,8 +5,8 @@ include_once('db_connection.php');
 //https://www.w3schools.com/php/func_mysqli_real_escape_string.asp
 $hashed_pwd = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-$result = db_insert_query("INSERT INTO Profile (name, email, birthdate, gender, password)
-VALUES ('" . db_escape_string($_POST['name']) . "', '" . db_escape_string($_POST['email']) . "', '" . db_escape_string($_POST['birthdate']) . "', '" . db_escape_string($_POST['gender']) . "', '" . db_escape_string($hashed_pwd) . "')");
+$result = db_insert_query("INSERT INTO Profile (name, email, birthdate, gender, hash)
+VALUES ('" . db_escape_string($_POST['name']) . "', '" . db_escape_string($_POST['email']) . "', '" . db_escape_string($_POST['birthdate']) . "', '" . db_escape_string($_POST['gender']) . "', '" . $hashed_pwd . "')");
 
 if($result > 0){
     //put stuff into session

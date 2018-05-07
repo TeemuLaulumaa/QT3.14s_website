@@ -1,13 +1,19 @@
 <?php
  if($_POST['login']){
+   include_once "db_connection.php";
+   //$postpwd = password_hash($_POST['password'], PASSWORD_DEFAULT);
+   $result = db_query("SELECT * FROM Profile WHERE email =  '" . db_escape_string($_POST['email']) . "'");
+   //$dbemail = db_query("SELECT 'email' FROM 'profile' WHERE email = ' . db_escape_string($_POST['email']) . '");
+   //$dbname = db_query("SELECT 'name' FROM 'profile' WHERE email = ' . db_escape_string($_POST['email']) . '");
+   $row = mysqli_fetch_assoc($result);
+   var_dump($row);
+   $dbemail = $row['email'];
+   $dbpwd = $row['hash'];
 
-   $postpwd = password_hash($_POST['password'], PASSWORD_DEFAULT);
-   $dbpwd = db_query("SELECT 'hash' FROM 'profile' WHERE name = ' . db_escape_string($_POST[startdate]) . '")
-
-   if(htmlentities(($_POST['username']) == $dbuser &&
-   password_verify($_POST['password'], $dbpwd))){
-     echo"Hello, $dbuser!";
-     $_SESSION['username'] = $dbuser;
+   if(password_verify($_POST['pwd'], $dbpwd) && !is_null($row)){
+     echo"Hello, " . $row['name'];
+     $_SESSION['name'] = $row['name'];
+     $_SESSION['email'] = $dbemail;
    } else {
        echo "Login failed.";
    }

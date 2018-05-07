@@ -1,3 +1,6 @@
+<?
+    require_once "https.php";
+?>
 <!DOCTYPE html>
 <html>
 <title>QTie - LQTS Analysis Tool - About</title>

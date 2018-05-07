@@ -69,8 +69,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
         <span class="close">&times;</span>
         <p>Welcome again, you handsome devil, please Insert your username and password</p>
         <form action="auth.php" method="post">
-          username: <input type="text" name="username">
-          password: <input tpye="password" name="pwd">
+          E-mail: <input type="text" name="email">
+          Password: <input type="password" name="pwd">
           <input type="submit" name="login" value="login">
         </form>
         </div>
@@ -117,6 +117,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
                 <label>Password: <input type="password" name="password" placeholder="asdf"></label>
                 <label>Male: <input type="radio" name="gender" value="male"></label>
                 <label>Female: <input type="radio" name="gender" value="female"></label>
+                <label>Other/Rather not say: <input type="radio" name="gender" value="other/rather not say">
                 <input type="submit" name="clicked" value="Register">
                 <input type="reset" value="Clear all">
             </fieldset>
