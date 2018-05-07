@@ -1,7 +1,11 @@
 <?
     require_once "https.php";
-?>
 
+if (session_status() == PHP_SESSION_NONE) {
+    header("Location: http://www.yourwebsite.com/user.php");
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <title>QTie - LQTS Analysis Tool - Profile</title>

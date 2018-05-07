@@ -14,6 +14,7 @@
      echo"Hello, " . $row['name'];
      $_SESSION['name'] = $row['name'];
      $_SESSION['email'] = $dbemail;
+     $_SESSION['profile_id'] = $row['profile_id'];
    } else {
        echo "Login failed.";
    }
