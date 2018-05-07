@@ -2,8 +2,7 @@
     require_once "https.php";
 
 //if (session_status() == PHP_SESSION_NONE) {
-//    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php");
-}
+//    header("Location:  https://users.metropolia.fi/~teemulau/QTie/start.php"); }
 
 ?>
 <!DOCTYPE html>
