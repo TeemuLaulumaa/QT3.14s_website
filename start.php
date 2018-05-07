@@ -1,5 +1,5 @@
 <?
-    require_once "https.php"
+    require_once "https.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -81,7 +81,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
             var btn = document.getElementById(b_id);
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[close];
-            // When the user clicks the button, open the modal 
+            // When the user clicks the button, open the modal
             btn.onclick = function() {
                 console.log(b_id + ' button works :)');
                 modal.style.display = "block";
@@ -117,8 +117,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
                 <input type="submit" name="clicked" value="Register">
                 <input type="reset" value="Clear all">
             </fieldset>
-        </form>           
-            
+        </form>
+
         </div>
     </div>
     <script>
@@ -155,7 +155,7 @@ function myFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else { 
+    } else {
         x.className = x.className.replace(" w3-show", "");
     }
 }
