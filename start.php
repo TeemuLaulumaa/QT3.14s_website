@@ -67,10 +67,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
     <!-- Login Modal content -->
         <div class="modal-content">
         <span class="close">&times;</span>
-            <?
-            include_once "auth.php"
-            ?>
         <p>Welcome again, you handsome devil, please Insert your username and password</p>
+        <form action="auth.php" method="post">
+          username: <input type="text" name="username">
+          password: <input tpye="password" name="pwd">
+          <input type="submit" name="login" value="login">
+        </form>
         </div>
     </div>
     <script>
@@ -112,6 +114,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-bar,h1,button {font-family: "Robotico", sans-serif}
                 <label>Name: <input type="text" name="name" placeholder="Mary Doe"></label>
                 <label>E-mail: <input type="email" name="email" placeholder="Mary@test.org"></label>
                 <label>Birthdate: <input type="date" name="birthdate" placeholder="yyyy-mm-dd"></label>
+                <label>Password: <input type="password" name="password" placeholder="asdf"></label>
                 <label>Male: <input type="radio" name="gender" value="male"></label>
                 <label>Female: <input type="radio" name="gender" value="female"></label>
                 <input type="submit" name="clicked" value="Register">
