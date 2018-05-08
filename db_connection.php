@@ -25,7 +25,7 @@ function db_connect() {
 function internal_query($query){
   // Connect to the database
   $connection = db_connect();
-  echo "query: $query\n";
+  //echo "query: $query\n";
   // Query the database
   $result = mysqli_query($connection,$query);
   if($result){
