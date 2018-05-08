@@ -6,7 +6,7 @@
    //$dbemail = db_query("SELECT 'email' FROM 'profile' WHERE email = ' . db_escape_string($_POST['email']) . '");
    //$dbname = db_query("SELECT 'name' FROM 'profile' WHERE email = ' . db_escape_string($_POST['email']) . '");
    $row = mysqli_fetch_assoc($result);
-   var_dump($row);
+   //var_dump($row);
    $dbemail = $row['email'];
    $dbpwd = $row['hash'];
 
