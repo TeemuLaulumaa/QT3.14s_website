@@ -131,12 +131,6 @@
 
     <!-- PIIRAKOIDNE JÄLKEEN FLOAT LOPETETAAN TÄLLÄ https://www.w3schools.com/howto/howto_css_clearfix.asp -->
 
-    <!-- <footer id="myFooter">
-      <div class="w3-container w3-theme-l2 w3-padding-32">
-          <p>&copy; 2018 QT3.14s. All Rights Reserved. </p>
-      </div>
-    </footer> -->
-
     <!-- END MAIN -->
   </div>
 

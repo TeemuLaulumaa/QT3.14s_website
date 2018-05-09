@@ -78,21 +78,9 @@
       <br>
       <p> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> --->
 
-<!-- <footer id="myFooter">
-      <div class="w3-container w3-theme-l2 w3-padding-32">
-        <h4>Footer</h4>
-      </div>
-    </footer> -->
-
-    <!-- END MAIN -->
   </div>
 </main>
-
-<footer>
-
-    <p> &copy; 2018 QTie Pies</p>
-
-</footer>
+    
   <script>
     // Get the Sidebar
     var mySidebar = document.getElementById("mySidebar");
