@@ -114,20 +114,20 @@
     <div id="chartdiv2"></div>
 
 <?php include_once "db_connection.php" ?>
-
+<div class="container">
     <form action="fetch_sessions.php" method="post">
-    Start date: <br> <input type="date" name="startdate">
-        <br><br>
-    End date: <br> <input type="date" name="enddate">
-        <br><br>
-    Activity: <br> <select name="activity">
+    <label>Start date: </label>
+    <input type="date" name="startdate">
+    <label>End date: </label><input type="date" name="enddate">
+    <label>Activity: </label><select name="activity">
         <option value="WORK">Work</option>
         <option value="EXERCISE">Exercise</option>
         <option value="REST">Rest</option> </select>
         <br><br>
-      <input class="button_black button" type="submit" value="Search">
-        <br><br>
+      <input class="button_black button" type="submit" value="Search" style="width: auto">
+        <br>
     </form>
+    </div>
 
     <!-- PIIRAKOIDNE JÄLKEEN FLOAT LOPETETAAN TÄLLÄ https://www.w3schools.com/howto/howto_css_clearfix.asp -->
 

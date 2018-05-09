@@ -53,6 +53,27 @@
 </nav>
 
 
+
+<!--burger menu-->
+<nav role="navigation">
+    <div id="menuToggle">
+    <input type="checkbox" />
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+        <a href="pies.php"><li>Home</li></a>
+        <a href="graph.php"><li>Graph</li></a>
+        <a href="profile.php"><li>Profile</li></a>
+        <a href="about.php"><li>About</li></a>
+        <a href="help.php"><li>Help</li></a>
+        <a href="logout.php"><li>Log out</li></a>
+    </ul>
+  </div>
+</nav>
+    
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 

@@ -34,6 +34,7 @@ if (session_status() == PHP_SESSION_NONE) {
   </div>
 </nav>
 
+
 <!--burger menu-->
 <nav role="navigation">
     <div id="menuToggle">
@@ -44,11 +45,12 @@ if (session_status() == PHP_SESSION_NONE) {
     <span></span>
 
     <ul id="menu">
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Info</li></a>
-      <a href="#"><li>Contact</li></a>
-      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+        <a href="pies.php"><li>Home</li></a>
+        <a href="graph.php"><li>Graph</li></a>
+        <a href="profile.php"><li>Profile</li></a>
+        <a href="about.php"><li>About</li></a>
+        <a href="help.php"><li>Help</li></a>
+        <a href="logout.php"><li>Log out</li></a>
     </ul>
   </div>
 </nav>

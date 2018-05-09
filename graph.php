@@ -39,6 +39,27 @@
     </div>
   </div>
 
+    
+<!--burger menu-->
+<nav role="navigation">
+    <div id="menuToggle">
+    <input type="checkbox" />
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+        <a href="pies.php"><li>Home</li></a>
+        <a href="graph.php"><li>Graph</li></a>
+        <a href="profile.php"><li>Profile</li></a>
+        <a href="about.php"><li>About</li></a>
+        <a href="help.php"><li>Help</li></a>
+        <a href="logout.php"><li>Log out</li></a>
+    </ul>
+  </div>
+</nav>
+    
   <!-- Sidebar -->
   <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
