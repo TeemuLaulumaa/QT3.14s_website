@@ -1760,7 +1760,7 @@ a {
 .container {
    /* clear: both; */
     
-   margin-right: 20%;
+    margin-right: 20%;
     text-align: center;
 }
 
@@ -1773,11 +1773,20 @@ a {
     float: left; 
 }
 
-.container input, select, button {
+.container input, select {
     width: 60%;
     margin-top: 1.5%;
     /*clear: both; */
     float: left; 
+}
+
+.container button {
+    margin-top: 1.5%;
+    margin-left: 10%;
+    background-color: red;
+    /*clear: both; */
+    float: center;
+    
 }
 
 /* burger menu */

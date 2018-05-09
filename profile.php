@@ -83,7 +83,7 @@
     <h1> Here you can edit your profile </h1>
     <div class="container">
     <form>
-        <label>Full name: </label>
+        <label>Full naame: </label>
         <input type="text" name="name">
         <label>E-mail: </label>
         <input type="email" name="email">
